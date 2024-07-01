@@ -618,6 +618,7 @@ namespace loguru
 	{
 		VLOG_F(g_internal_verbosity, "atexit");
 		flush();
+        remove_all_callbacks();
 	}
 
 	static void install_signal_handlers(const SignalOptions& signal_options);
